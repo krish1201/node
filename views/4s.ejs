@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+<ul class="Employee">
+<% for(var i=0;i<Employee.length;i++){ %>
+	<li class="Employee">
+		<span><%= "EmpID:" +Employee[i].empid %></span>
+		<span><%= "Name:" +Employee[i].name %></span>
+		<span><%= "Dept:" +Employee[i].dept %></span>
+		<span><%= "Designation:" +Employee[i].desi %></span>
+	</li>
+	<% } %>
+</ul>
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
+        

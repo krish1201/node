@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+    </head>
+
+    
+
+	<body>
+		
+		<!--<form action="process" method="POST">
+			<p>Name</p><input type="text" name="name">
+			<p>EMPID</p><input type="text" name="empid">
+			<p>Department</p><input type="text" name="dept">
+			<p>Designation</p><input type="text" name="desi">
+			<p>E-mail</p><input type="text" name="email">
+			<p>Mobile Number</p><input type="text" name="mob"><br>
+			<input type="submit" value="submit">
+			<a href="4_update.html">UpDate</a>
+			<a href="/views/sort">Sort</a>
+		</form>-->
+	
+
+	<div class="row">
+    <form class="col s12" action="process" method="POST">
+      <div class="row">
+        <div class="input-field col s6">
+          Name:<br/> <input class="w3-input w3-padding-16" id="name" name="name" type="text" class="validate">
+          <!--<label for="name">Name</label>-->
+        </div>
+        <div class="input-field col s6">
+          Employee ID:<br/> <input class="w3-input w3-padding-16" id="empid" name="empid" type="text" class="validate">
+          
+        </div>
+      </div>
+	<div class="row">
+        <div class="input-field col s6">
+          Department:<br/> <input class="w3-input w3-padding-16" id="dept" name="dept" type="text" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          Designation:<br/> <input class="w3-input w3-padding-16" id="desi" name="desi" type="text" class="validate">
+          
+        </div>
+      </div>
+	<div class="row">
+        <div class="input-field col s6">
+          E-mail:<br/> <input class="w3-input w3-padding-16" id="email" name="email" type="text" class="validate">
+          
+        </div>
+        <div class="input-field col s6">
+          Mobile Number:<br/> <input class="w3-input w3-padding-16" id="mob" name="mob" type="text" class="validate">
+          
+        </div>
+      </div>
+
+	<br/><input class="waves-effect waves-light btn" type="submit" value="submit">
+    </form>
+
+  </div>
+<div>
+<br/>
+<a class="waves-effect waves-light btn" href="update.html">Update</a>
+<a class="waves-effect waves-light btn" href="/display">Display</a>
+</div>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
+        
