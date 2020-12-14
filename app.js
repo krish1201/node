@@ -12,7 +12,7 @@ MongoClient.connect(uri,function(err,db){
 	if(err) 
 		console.log(err);
 	app.get('/',function(req,res){
-		res.send("<h1>HELLO</h1>");
+		res.send("<h1>HELLO we are updated</h1>");
 	})
 
 	var collection = db.collection('employee');
