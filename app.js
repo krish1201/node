@@ -6,8 +6,8 @@ var expressValidator = require('express-validator');
 var app = express();
 var ejs = require('ejs')
 app.use(expressValidator())
-//const uri = "mongodb+srv://admin:monochrome@cluster0.ueejt.mongodb.net/employee?retryWrites=true&w=majority";
-var uri = "mongodb://admin:monochrome@cluster0-shard-00-00.ueejt.mongodb.net:27017,cluster0-shard-00-01.ueejt.mongodb.net:27017,cluster0-shard-00-02.ueejt.mongodb.net:27017/employee?ssl=true&replicaSet=atlas-p1n8k4-shard-0&authSource=admin&retryWrites=true&w=majority";
+//const uri = "mongodb+srv://admin:<password>@cluster0.ueejt.mongodb.net/employee?retryWrites=true&w=majority";
+var uri = "mongodb://admin:<password>@cluster0-shard-00-00.ueejt.mongodb.net:27017,cluster0-shard-00-01.ueejt.mongodb.net:27017,cluster0-shard-00-02.ueejt.mongodb.net:27017/employee?ssl=true&replicaSet=atlas-p1n8k4-shard-0&authSource=admin&retryWrites=true&w=majority";
 MongoClient.connect(uri,function(err,db){
 	if(err) 
 		console.log(err);
